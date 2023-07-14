@@ -8,14 +8,14 @@ sealed class Routes(
     val arguments: List<NamedNavArgument> = listOf()
 ) {
 
-    object ScreenExampleOne : Routes(route = "screen_example_one") {
-        fun NavController.toScreenExampleOne() =
+    object ExampleOneScreen : Routes(route = "example_one_screen") {
+        fun NavController.toExampleOneScreen() =
             navigate(route) {
                 popBackStack(route, true)
             }
     }
 
-    object ScreenExampleTwo : Routes(route = "screen_example_two") {
-        fun NavController.toScreenExampleTwo() = navigate(route)
+    object ExampleTwoScreen : Routes(route = "example_two_screen") {
+        fun NavController.toExampleTwoScreen() = navigate(route)
     }
 }

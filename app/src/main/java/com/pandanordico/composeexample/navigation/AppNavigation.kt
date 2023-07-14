@@ -11,17 +11,17 @@ import com.pandanordico.composeexample.ui.theme.Dimen
 fun AppNavigation(navHostController: NavHostController) {
     val dimens = Dimen()
 
-    NavHost(navController = navHostController, startDestination = Routes.ScreenExampleOne.route) {
+    NavHost(navController = navHostController, startDestination = Routes.ExampleOneScreen.route) {
 
-        composable(route = Routes.ScreenExampleOne.route) {
-            ScreenExampleOne(
+        composable(route = Routes.ExampleOneScreen.route) {
+            ExampleOneScreen(
                 dimens = dimens,
                 navController = navHostController
             )
         }
 
-        composable(route = Routes.ScreenExampleTwo.route) {
-            ScreenExampleTwo(
+        composable(route = Routes.ExampleTwoScreen.route) {
+            ExampleTwoScreen(
                 dimens = dimens,
                 navController = navHostController
             )
